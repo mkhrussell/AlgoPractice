@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="AlgoPractice" Database="">
+  <Project Name="QuickSortImpl" Path="QuickSortImpl/QuickSortImpl.project" Active="Yes"/>
+  <Project Name="SimpleQueueImpl" Path="SimpleQueueImpl/SimpleQueueImpl.project"/>
+  <Project Name="SimpleStackImpl" Path="SimpleStackImpl/SimpleStackImpl.project"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="QuickSortImpl" ConfigName="Debug"/>
+      <Project Name="SimpleQueueImpl" ConfigName="Debug"/>
+      <Project Name="SimpleStackImpl" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="QuickSortImpl" ConfigName="Release"/>
+      <Project Name="SimpleQueueImpl" ConfigName="Release"/>
+      <Project Name="SimpleStackImpl" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

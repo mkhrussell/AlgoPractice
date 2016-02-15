@@ -1,2 +1,2 @@
 # AlgoPractice
-Practice implementation of popular algorithms
+Practice implementation of popular and important algorithms
