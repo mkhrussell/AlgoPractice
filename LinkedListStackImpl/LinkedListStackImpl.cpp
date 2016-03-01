@@ -1,22 +1,26 @@
 #include <iostream>
 #include <cstdio>
+#include <cassert>
 
 using namespace std;
 
-typedef struct _stackNode stackNode;
-typedef struct _stack stack;
+const int NEG_INF = -999999999;
+
+typedef struct _stackNode StackNode;
+typedef struct _stack Stack;
+
 struct _stackNode {
 	int value;
-	stackNode *next;
+	StackNode *next;
 };
 
 struct _stack {
-	stackNode *top;
+	StackNode *top;
 };
 
-void push(stack &myStack, int value)
+void push(Stack &myStack, int value)
 {
-	stackNode *newNode = (stackNode*)malloc(sizeof(stackNode));
+	StackNode *newNode = (StackNode*)malloc(sizeof(StackNode));
 	if (NULL == newNode) {
 		return;
 	}
@@ -26,34 +30,48 @@ void push(stack &myStack, int value)
 	myStack.top = newNode;
 }
 
-int pop(stack &myStack)
+int top(Stack &myStack)
+{
+	assert(NULL != myStack.top); // Check the Stack is not empty or not
+
+	return myStack.top->value;
+}
+
+void pop(Stack &myStack)
 {
 	if (NULL == myStack.top)
 	{
-		return -999999999;
+		return;
 	}
 
-	stackNode *willBeDeletedNode = myStack.top;
-	int value = willBeDeletedNode->value;
+	StackNode *willBeDeletedNode = myStack.top;	
 	myStack.top = willBeDeletedNode->next;
 	free(willBeDeletedNode);
+}
 
-	return value;
+int isEmpty(Stack &myStack)
+{
+	if (NULL == myStack.top) // Empty
+		return 1;
+
+	return 0;
 }
 
 int main()
 {
-	stack myStack;
+	Stack myStack;
 	myStack.top = NULL;
 
 	push(myStack, 10);
 	push(myStack, 30);
 	push(myStack, 50);
 
-	cout << pop(myStack) << endl;
-	cout << pop(myStack) << endl;
-	cout << pop(myStack) << endl;
-	cout << pop(myStack) << endl;
+	while (!isEmpty(myStack))
+	{
+		cout << top(myStack) << endl; pop(myStack);
+	}
 
+	cout << top(myStack) << endl; pop(myStack);
+	
 	return 0;
 }
