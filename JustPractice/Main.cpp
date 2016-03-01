@@ -1,5 +1,4 @@
 #include <iostream>
-
 #include "Contact.h"
 
 using namespace std;

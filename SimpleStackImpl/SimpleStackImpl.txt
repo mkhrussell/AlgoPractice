@@ -1,0 +1,1 @@
+./Debug/SimpleStackImpl.cpp.o   

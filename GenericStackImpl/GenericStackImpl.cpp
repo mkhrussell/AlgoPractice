@@ -93,7 +93,7 @@ int main()
 		std::cout << myStack.top() << std::endl; myStack.pop();
 	}
 
-	std::cout << myStack.top() << std::endl; myStack.pop(); // Will give assertion failed message
+	// std::cout << myStack.top() << std::endl; myStack.pop(); // Will give assertion failed message, as Stack is empty
 
 	return 0;
 }

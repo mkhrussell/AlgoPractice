@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LinkedListStackImpl.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{35CF09F1-D82E-4B9B-9541-46923FA99572}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -141,9 +144,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="LinkedListStackImpl.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

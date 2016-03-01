@@ -2,10 +2,10 @@
 #include <cassert>
 
 template <class Item>
-class Stack {
+class Queue {
 public:
-	Stack();
-	~Stack();
+	Queue();
+	~Queue();
 	void push(Item value);
 	void pop();
 	Item top();
@@ -25,19 +25,19 @@ private:
 };
 
 template <class Item>
-Stack<Item>::Stack()
+Queue<Item>::Queue()
 {
 	frontNode = topNode = nullptr;
 }
 
 template <class Item>
-Stack<Item>::~Stack()
+Queue<Item>::~Queue()
 {
 	/* std::cout << "Queue freed" << std::endl; */
 }
 
 template <class Item>
-void Stack<Item>::push(Item value)
+void Queue<Item>::push(Item value)
 {
 	Node *temp = new Node(value);
 	if (nullptr == topNode)
@@ -51,7 +51,7 @@ void Stack<Item>::push(Item value)
 }
 
 template <class Item>
-void Stack<Item>::pop()
+void Queue<Item>::pop()
 {
 	if (nullptr == frontNode) // Empty
 	{
@@ -64,7 +64,7 @@ void Stack<Item>::pop()
 }
 
 template <class Item>
-Item Stack<Item>::top()
+Item Queue<Item>::top()
 {
 	assert(nullptr != frontNode); // Check the Queue is not empty or not
 
@@ -72,7 +72,7 @@ Item Stack<Item>::top()
 }
 
 template <class Item>
-bool Stack<Item>::empty()
+bool Queue<Item>::empty()
 {
 	if (nullptr == frontNode) // Empty
 	{
@@ -84,7 +84,7 @@ bool Stack<Item>::empty()
 
 int main()
 {
-	Stack<char> myQueue;
+	Queue<char> myQueue;
 	myQueue.push('A');
 	myQueue.push('B');
 	myQueue.push('C');
@@ -94,7 +94,7 @@ int main()
 		std::cout << myQueue.top() << std::endl; myQueue.pop();
 	}
 
-	std::cout << myQueue.top() << std::endl; myQueue.pop(); // Will give assertion failed message
+	// std::cout << myQueue.top() << std::endl; myQueue.pop(); // Will give assertion failed message, as Queue is empty
 
 	return 0;
 }

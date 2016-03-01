@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="LinkedListQueueImpl.cpp">
+    <ClCompile Include="LinkedListQueueImpl.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

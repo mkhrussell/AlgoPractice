@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="AlgoPractice" Database="">
-  <Project Name="QuickSortImpl" Path="QuickSortImpl/QuickSortImpl.project" Active="Yes"/>
-  <Project Name="SimpleQueueImpl" Path="SimpleQueueImpl/SimpleQueueImpl.project"/>
-  <Project Name="SimpleStackImpl" Path="SimpleStackImpl/SimpleStackImpl.project"/>
+  <Project Name="QuickSortImpl" Path="QuickSortImpl/QuickSortImpl.project" Active="No"/>
+  <Project Name="SimpleQueueImpl" Path="SimpleQueueImpl/SimpleQueueImpl.project" Active="No"/>
+  <Project Name="SimpleStackImpl" Path="SimpleStackImpl/SimpleStackImpl.project" Active="No"/>
+  <Project Name="GenericQueueImpl" Path="GenericQueueImpl/GenericQueueImpl.project" Active="No"/>
+  <Project Name="GenericStackImpl" Path="GenericStackImpl/GenericStackImpl.project" Active="No"/>
+  <Project Name="JustPractice" Path="JustPractice/JustPractice.project" Active="Yes"/>
+  <Project Name="LinkedListQueueImpl" Path="LinkedListQueueImpl/LinkedListQueueImpl.project" Active="No"/>
+  <Project Name="LinkedListStackImpl" Path="LinkedListStackImpl/LinkedListStackImpl.project" Active="No"/>
+  <Project Name="StlPractice" Path="StlPractice/StlPractice.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="QuickSortImpl" ConfigName="Debug"/>
       <Project Name="SimpleQueueImpl" ConfigName="Debug"/>
       <Project Name="SimpleStackImpl" ConfigName="Debug"/>
+      <Project Name="GenericQueueImpl" ConfigName="Debug"/>
+      <Project Name="GenericStackImpl" ConfigName="Debug"/>
+      <Project Name="JustPractice" ConfigName="Debug"/>
+      <Project Name="LinkedListQueueImpl" ConfigName="Debug"/>
+      <Project Name="LinkedListStackImpl" ConfigName="Debug"/>
+      <Project Name="StlPractice" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="QuickSortImpl" ConfigName="Release"/>
       <Project Name="SimpleQueueImpl" ConfigName="Release"/>
       <Project Name="SimpleStackImpl" ConfigName="Release"/>
+      <Project Name="GenericQueueImpl" ConfigName="Release"/>
+      <Project Name="GenericStackImpl" ConfigName="Release"/>
+      <Project Name="JustPractice" ConfigName="Release"/>
+      <Project Name="LinkedListQueueImpl" ConfigName="Release"/>
+      <Project Name="LinkedListStackImpl" ConfigName="Release"/>
+      <Project Name="StlPractice" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

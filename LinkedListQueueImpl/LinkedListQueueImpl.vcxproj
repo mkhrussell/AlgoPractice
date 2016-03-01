@@ -18,6 +18,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LinkedListQueueImpl.c" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{5FD58F5F-3D65-48E8-88BB-9BA8CFBD3C08}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -141,9 +144,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="LinkedListQueueImpl.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
