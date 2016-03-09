@@ -5,10 +5,11 @@
   <Project Name="SimpleStackImpl" Path="SimpleStackImpl/SimpleStackImpl.project" Active="No"/>
   <Project Name="GenericQueueImpl" Path="GenericQueueImpl/GenericQueueImpl.project" Active="No"/>
   <Project Name="GenericStackImpl" Path="GenericStackImpl/GenericStackImpl.project" Active="No"/>
-  <Project Name="JustPractice" Path="JustPractice/JustPractice.project" Active="Yes"/>
+  <Project Name="JustPractice" Path="JustPractice/JustPractice.project" Active="No"/>
   <Project Name="LinkedListQueueImpl" Path="LinkedListQueueImpl/LinkedListQueueImpl.project" Active="No"/>
   <Project Name="LinkedListStackImpl" Path="LinkedListStackImpl/LinkedListStackImpl.project" Active="No"/>
   <Project Name="StlPractice" Path="StlPractice/StlPractice.project" Active="No"/>
+  <Project Name="BellmanFord" Path="BellmanFord/BellmanFord.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -21,6 +22,7 @@
       <Project Name="LinkedListQueueImpl" ConfigName="Debug"/>
       <Project Name="LinkedListStackImpl" ConfigName="Debug"/>
       <Project Name="StlPractice" ConfigName="Debug"/>
+      <Project Name="BellmanFord" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -33,6 +35,7 @@
       <Project Name="LinkedListQueueImpl" ConfigName="Release"/>
       <Project Name="LinkedListStackImpl" ConfigName="Release"/>
       <Project Name="StlPractice" ConfigName="Release"/>
+      <Project Name="BellmanFord" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
