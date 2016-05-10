@@ -9,7 +9,11 @@
   <Project Name="LinkedListQueueImpl" Path="LinkedListQueueImpl/LinkedListQueueImpl.project" Active="No"/>
   <Project Name="LinkedListStackImpl" Path="LinkedListStackImpl/LinkedListStackImpl.project" Active="No"/>
   <Project Name="StlPractice" Path="StlPractice/StlPractice.project" Active="No"/>
-  <Project Name="BellmanFord" Path="BellmanFord/BellmanFord.project" Active="Yes"/>
+  <Project Name="BellmanFord" Path="BellmanFord/BellmanFord.project" Active="No"/>
+  <Project Name="DS-Practice" Path="DS-Practice/DS-Practice.project" Active="Yes"/>
+  <Project Name="Libs" Path="Libs/Libs.project" Active="No"/>
+  <Project Name="MST-Prims" Path="MST-Prims/MST-Prims.project"/>
+  <Project Name="TarjanSCC" Path="TarjanSCC/TarjanSCC.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -23,6 +27,10 @@
       <Project Name="LinkedListStackImpl" ConfigName="Debug"/>
       <Project Name="StlPractice" ConfigName="Debug"/>
       <Project Name="BellmanFord" ConfigName="Debug"/>
+      <Project Name="DS-Practice" ConfigName="Debug"/>
+      <Project Name="Libs" ConfigName="Debug"/>
+      <Project Name="MST-Prims" ConfigName="Debug"/>
+      <Project Name="TarjanSCC" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -36,6 +44,10 @@
       <Project Name="LinkedListStackImpl" ConfigName="Release"/>
       <Project Name="StlPractice" ConfigName="Release"/>
       <Project Name="BellmanFord" ConfigName="Release"/>
+      <Project Name="DS-Practice" ConfigName="Release"/>
+      <Project Name="Libs" ConfigName="Release"/>
+      <Project Name="MST-Prims" ConfigName="Release"/>
+      <Project Name="TarjanSCC" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

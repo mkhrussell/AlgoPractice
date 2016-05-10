@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=GenericStackImpl
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\mkhrussell\Documents\Visual Studio 2015\Projects\AlgoPractice"
-ProjectPath            := "C:\Users\mkhrussell\Documents\Visual Studio 2015\Projects\AlgoPractice\GenericStackImpl"
+WorkspacePath          := "D:\Programming\AlgoPractice"
+ProjectPath            := "D:\Programming\AlgoPractice\GenericStackImpl"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=mkhrussell
-Date                   :=02/03/2016
+User                   :=kamrul.hasan
+Date                   :=10/05/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/LLVM/bin/clang++.exe
 SharedObjectLinkerName :=C:/LLVM/bin/clang++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/GenericStackImpl.cpp$(ObjectSuffix): GenericStackImpl.cpp $(IntermediateDirectory)/GenericStackImpl.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/mkhrussell/Documents/Visual Studio 2015/Projects/AlgoPractice/GenericStackImpl/GenericStackImpl.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/GenericStackImpl.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Programming/AlgoPractice/GenericStackImpl/GenericStackImpl.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/GenericStackImpl.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/GenericStackImpl.cpp$(DependSuffix): GenericStackImpl.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/GenericStackImpl.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/GenericStackImpl.cpp$(DependSuffix) -MM "GenericStackImpl.cpp"
 

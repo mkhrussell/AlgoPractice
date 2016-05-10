@@ -5,18 +5,18 @@
 ## Debug
 ProjectName            :=LinkedListQueueImpl
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\mkhrussell\Documents\Visual Studio 2015\Projects\AlgoPractice"
-ProjectPath            := "C:\Users\mkhrussell\Documents\Visual Studio 2015\Projects\AlgoPractice\LinkedListQueueImpl"
+WorkspacePath          := "D:\Programming\AlgoPractice"
+ProjectPath            := "D:\Programming\AlgoPractice\LinkedListQueueImpl"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=mkhrussell
-Date                   :=02/03/2016
+User                   :=kamrul.hasan
+Date                   :=10/05/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
-LinkerName             :=C:/LLVM/bin/clang++.exe
-SharedObjectLinkerName :=C:/LLVM/bin/clang++.exe -shared -fPIC
+LinkerName             :=C:/TDM-GCC-64/bin/g++.exe
+SharedObjectLinkerName :=C:/TDM-GCC-64/bin/g++.exe -shared -fPIC
 ObjectSuffix           :=.o
 DependSuffix           :=.o.d
 PreprocessSuffix       :=.i
@@ -38,7 +38,7 @@ MakeDirCommand         :=makedir
 RcCmpOptions           := 
 RcCompilerName         :=C:/TDM-GCC-64/bin/windres.exe
 LinkOptions            :=  
-IncludePath            := $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++ $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32 $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include $(IncludeSwitch)C:/TDM-GCC-64/include $(IncludeSwitch)C:/TDM-GCC-64/lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed $(IncludeSwitch)C:/TDM-GCC-64/x86_64-w64-mingw32/include  $(IncludeSwitch). $(IncludeSwitch). 
+IncludePath            :=  $(IncludeSwitch). $(IncludeSwitch). 
 IncludePCH             := 
 RcIncludePath          := 
 Libs                   := 
@@ -49,13 +49,13 @@ LibPath                := $(LibraryPathSwitch).
 ## Common variables
 ## AR, CXX, CC, AS, CXXFLAGS and CFLAGS can be overriden using an environment variables
 ##
-AR       := C:/LLVM/bin/llvm-ar.exe rcu
-CXX      := C:/LLVM/bin/clang++.exe
-CC       := C:/LLVM/bin/clang.exe
+AR       := C:/TDM-GCC-64/bin/ar.exe rcu
+CXX      := C:/TDM-GCC-64/bin/g++.exe
+CC       := C:/TDM-GCC-64/bin/gcc.exe
 CXXFLAGS :=  -g -O0 -pedantic -Wall $(Preprocessors)
 CFLAGS   :=  -g -O0 -pedantic -Wall $(Preprocessors)
 ASFLAGS  := 
-AS       := C:/LLVM/bin/as.exe
+AS       := C:/TDM-GCC-64/bin/as.exe
 
 
 ##
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/LinkedListQueueImpl.c$(ObjectSuffix): LinkedListQueueImpl.c $(IntermediateDirectory)/LinkedListQueueImpl.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "C:/Users/mkhrussell/Documents/Visual Studio 2015/Projects/AlgoPractice/LinkedListQueueImpl/LinkedListQueueImpl.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/LinkedListQueueImpl.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "D:/Programming/AlgoPractice/LinkedListQueueImpl/LinkedListQueueImpl.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/LinkedListQueueImpl.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/LinkedListQueueImpl.c$(DependSuffix): LinkedListQueueImpl.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/LinkedListQueueImpl.c$(ObjectSuffix) -MF$(IntermediateDirectory)/LinkedListQueueImpl.c$(DependSuffix) -MM "LinkedListQueueImpl.c"
 

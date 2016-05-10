@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=StlPractice
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\mkhrussell\Documents\Visual Studio 2015\Projects\AlgoPractice"
-ProjectPath            := "C:\Users\mkhrussell\Documents\Visual Studio 2015\Projects\AlgoPractice\StlPractice"
+WorkspacePath          := "D:\Programming\AlgoPractice"
+ProjectPath            := "D:\Programming\AlgoPractice\StlPractice"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=mkhrussell
-Date                   :=02/03/2016
+User                   :=kamrul.hasan
+Date                   :=10/05/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/LLVM/bin/clang++.exe
 SharedObjectLinkerName :=C:/LLVM/bin/clang++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/Main.cpp$(ObjectSuffix): Main.cpp $(IntermediateDirectory)/Main.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/mkhrussell/Documents/Visual Studio 2015/Projects/AlgoPractice/StlPractice/Main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Programming/AlgoPractice/StlPractice/Main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Main.cpp$(DependSuffix): Main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Main.cpp$(DependSuffix) -MM "Main.cpp"
 

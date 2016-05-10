@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=GenericQueueImpl
 ConfigurationName      :=Debug
-WorkspacePath          := "C:\Users\mkhrussell\Documents\Visual Studio 2015\Projects\AlgoPractice"
-ProjectPath            := "C:\Users\mkhrussell\Documents\Visual Studio 2015\Projects\AlgoPractice\GenericQueueImpl"
+WorkspacePath          := "D:\Programming\AlgoPractice"
+ProjectPath            := "D:\Programming\AlgoPractice\GenericQueueImpl"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
-User                   :=mkhrussell
-Date                   :=02/03/2016
+User                   :=kamrul.hasan
+Date                   :=10/05/2016
 CodeLitePath           :="C:\Program Files\CodeLite"
 LinkerName             :=C:/LLVM/bin/clang++.exe
 SharedObjectLinkerName :=C:/LLVM/bin/clang++.exe -shared -fPIC
@@ -94,7 +94,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/GenericQueueImpl.cpp$(ObjectSuffix): GenericQueueImpl.cpp $(IntermediateDirectory)/GenericQueueImpl.cpp$(DependSuffix)
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/mkhrussell/Documents/Visual Studio 2015/Projects/AlgoPractice/GenericQueueImpl/GenericQueueImpl.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/GenericQueueImpl.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "D:/Programming/AlgoPractice/GenericQueueImpl/GenericQueueImpl.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/GenericQueueImpl.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/GenericQueueImpl.cpp$(DependSuffix): GenericQueueImpl.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/GenericQueueImpl.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/GenericQueueImpl.cpp$(DependSuffix) -MM "GenericQueueImpl.cpp"
 
